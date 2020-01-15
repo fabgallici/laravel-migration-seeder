@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Movie;
+use App\Mymovie;
 use Illuminate\Http\Request;
 
 class myMovieController extends Controller
 {
     public function index() {
-        $movies = Movie::all();
+        $movies = Mymovie::all();
 
         // dd($movies);
 
