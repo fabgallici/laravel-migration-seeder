@@ -9,8 +9,10 @@ class myMovieController extends Controller
     public function index() {
         $movies = Mymovie::all();
 
-        // dd($movies);
+        dd($movies);
 
-        return view('pages.myMovies', compact('movies'));
+        // return $movies;  //return json
+
+        // return view('pages.myMovies', compact('movies'));
     }
 }
